@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
 }
+.profileWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+img {
+    height: 30px;
+    width:  30px;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -9,6 +19,10 @@
 }
 .header {
     background-color: teal;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: .5rem 0;
+    gap: .5rem;
 }
 .sidebar {
     background-color: green;
@@ -20,9 +34,31 @@
 }
 .text {
     padding: .5em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    
+}
+.search {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-left: 1rem;
+}
+.searchInput {
+    margin: 0 1rem;
+    display: flex;
+    flex-grow: 1;
+    min-width: 15rem;
 }
 .content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     background-color: red;
+}
+.updates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
